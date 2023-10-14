@@ -1,5 +1,5 @@
-# Tiago Gomes
-## Software Devloper
+# Tiago Gomes - Software Developer
+## 
 ### **2023-2024 Developer Goals**
 
 
