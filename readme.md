@@ -1,8 +1,10 @@
-# **2023-2024 Developer Goals**
+# Tiago Gomes
+## Software Devloper
+### **2023-2024 Developer Goals**
 
 
 
-# **Languages**
+### **Languages**
 1. C#
 2. JavaScript
 3. mySQL
