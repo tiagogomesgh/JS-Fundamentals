@@ -85,51 +85,107 @@
 
 // *** *** *** CodeWARS KATA *** *** *** 
 
-function getPlanetName(id){
-    var name;
-    switch(id){
-      case 1: { 
-          name = 'Mercury'
-          break;
-      }
-      case 2: {
-          name = 'Venus'
-          break;
-      }
+// function getPlanetName(id){
+//     var name;
+//     switch(id){
+//       case 1: { 
+//           name = 'Mercury'
+//           break;
+//       }
+//       case 2: {
+//           name = 'Venus'
+//           break;
+//       }
       
-      case 3: {
-          name = 'Earth'
-          break;
-      }
-      case 4: {
-          name = 'Mars'
-          break;
-      }
-      case 5: {
-          name = 'Jupiter'
-          break;
-      }
-      case 6: {
-          name = 'Saturn'
-          break;
-      }
-      case 7: {
-          name = 'Uranus'
-          break;
-      }
-      case 8: {
-          name = 'Neptune'
-          break;
-      }
-    }
+//       case 3: {
+//           name = 'Earth'
+//           break;
+//       }
+//       case 4: {
+//           name = 'Mars'
+//           break;
+//       }
+//       case 5: {
+//           name = 'Jupiter'
+//           break;
+//       }
+//       case 6: {
+//           name = 'Saturn'
+//           break;
+//       }
+//       case 7: {
+//           name = 'Uranus'
+//           break;
+//       }
+//       case 8: {
+//           name = 'Neptune'
+//           break;
+//       }
+//     }
     
-    return name;
-  }
-  console.log(getPlanetName(3));
+//     return name;
+//   }
+//   console.log(getPlanetName(3));
 
 
-let getEvenOrOdd = (number) => {
-     let result = number % 2 == 0 ? "Even" : "Odd" ;
-      return result;
+
+// let getEvenOrOdd = (number) => {
+//      let result = number % 2 == 0 ? "Even" : "Odd" ;
+//       return result;
+//     }
+// console.log(getEvenOrOdd(4));
+
+
+
+// let getDivisorsCnt = (n) =>  {
+//     let divisors = 0;
+//       for (let i = 1; i <= n; i++) {
+//           if (n % i == 0) 
+//           divisors++;
+//       }
+//       console.log(divisors);
+//       return divisors;
+//   }
+
+
+
+
+// getDivisorCnt(4892);
+
+
+
+// let getDivisorCnt = (n) => {
+//     let count = 0
+//     if (n % Math.sqrt(n) == 0) {
+//         count ++
+//     }
+//     for (let i = 0; i < Math.sqrt(n); i++) {
+//         if (n % i == 0) {
+//             count += 2
+//         }
+//     }
+//     console.log(count)
+//     return count
+    
+// }
+
+// getDivisorCnt(50000);
+
+var animals = [
+{ name: "Cat", numberOfLegs: 4 },
+{ name: "Snake", numberOfLegs: 0 },
+{ name: "Dog", numberOfLegs: 4 },
+{ name: "Pig", numberOfLegs: 4 },
+{ name: "Human", numberOfLegs: 2 },
+{ name: "Bird", numberOfLegs: 2 }
+]
+
+let sortAnimal = (animals) => {
+    let clone = JSON.parse(JSON.stringify(animals)) 
+    if (!clone) return [];
+      return clone.sort((a, b) => {
+        return a.numberOfLegs - b.numberOfLegs || a.name.localeCompare(b.name)
+      })
     }
-console.log(getEvenOrOdd(4));
+    console.log(sortAnimal(animals));
+
