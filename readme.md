@@ -1,5 +1,6 @@
 # Tiago Gomes - Software Developer
 ## Portland Oregon, Metropolitan Area.
+![alt text](https://www.codewars.com/users/tiagogomesfl/badges/large)
 ### **2023-2024 Developer Goals**
 *Work towards mastery in C# and JavaScript languages.*
 
@@ -23,11 +24,11 @@
 
 
 
-### **Languages**
+<!-- ### **Languages**
 1. C#
 2. JavaScript
 3. mySQL
 4. HTML5
-5. CSS
+5. CSS -->
 
 

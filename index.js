@@ -15,8 +15,7 @@
 // let creditScore = 720;
 
 
-
-// console.log(name, age, creditScore);
+//console.log(name, age, creditScore);
 
 // Primitive or Value Types vs Reference Types
 // Primitive : Strings, Numbers, Booleans, Undefined, and null.
@@ -83,6 +82,7 @@
 // document.addEventListener('click', () => console.log('Click'))
 
 
+
 // *** *** *** CodeWARS KATA *** *** *** 
 
 // function getPlanetName(id){
@@ -129,6 +129,7 @@
 
 
 
+
 // let getEvenOrOdd = (number) => {
 //      let result = number % 2 == 0 ? "Even" : "Odd" ;
 //       return result;
@@ -171,21 +172,77 @@
 
 // getDivisorCnt(50000);
 
-var animals = [
-{ name: "Cat", numberOfLegs: 4 },
-{ name: "Snake", numberOfLegs: 0 },
-{ name: "Dog", numberOfLegs: 4 },
-{ name: "Pig", numberOfLegs: 4 },
-{ name: "Human", numberOfLegs: 2 },
-{ name: "Bird", numberOfLegs: 2 }
-]
+// Sort My Animals 6kyu
 
-let sortAnimal = (animals) => {
-    let clone = JSON.parse(JSON.stringify(animals)) 
-    if (!clone) return [];
-      return clone.sort((a, b) => {
-        return a.numberOfLegs - b.numberOfLegs || a.name.localeCompare(b.name)
-      })
+// SAMPLE DATA 
+// var animals = [
+// { name: "Cat", numberOfLegs: 4 },
+// { name: "Snake", numberOfLegs: 0 },
+// { name: "Dog", numberOfLegs: 4 },
+// { name: "Pig", numberOfLegs: 4 },
+// { name: "Human", numberOfLegs: 2 },
+// { name: "Bird", numberOfLegs: 2 }
+// ]
+
+// FUNCTION:
+// let sortAnimal = (animals) => {
+//     let clone = JSON.parse(JSON.stringify(animals)) 
+//     if (!clone) return [];
+//       return clone.sort((a, b) => {
+//         return a.numberOfLegs - b.numberOfLegs || a.name.localeCompare(b.name)
+//       })
+//  }
+//     console.log(sortAnimal(animals));
+
+// Min Max 7kyu
+
+// SAMPLE DATA
+// let arr = [[[1, 2, 3, 4, 5], [1, 5]],
+// [[2334454, 5], [5, 2334454]],
+// [[5], [5, 5]]]
+
+// function minMax(arr){
+//     let min = Math.min(...arr);
+//     let max = Math.max(...arr);
+//     let result = ([min, max]);
+//     console.log(result);
+//     return (result);
+//   }
+
+
+
+
+
+
+//RGB TO HEX CONVERSION IN JAVASCRIPT.
+// create an array of objects that stores the values as [r, g, b] - DONE
+// restrict range of its values - DONE BUT ERROR
+// handle capitalizations - NOT DONE
+// convert to hexadecimal string - NOT DONE.
+
+
+let rgb = (r, g, b) => {
+    let colors = [];
+    colors.push(r);
+    colors.push(g);
+    colors.push(b);
+    
+    const correctedColors = colors.map(restrictRange);
+    console.log(correctedColors);
+    
+
+};
+//
+let restrictRange = (colors) => {
+    for (let i of colors) {
+        if (i > 255) {
+            i = 255
+        } else if (i < 0) {
+            i = 0;
+        }
     }
-    console.log(sortAnimal(animals));
+    
+}
+rgb(300,255,255);
+
 
