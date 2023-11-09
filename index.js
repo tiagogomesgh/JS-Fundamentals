@@ -1,4 +1,4 @@
-
+//JavaScript Refresh.
 // Variables
 // Rules for naming Variables : 
 // 1) Cannot be a reserved keyword. 
@@ -83,6 +83,8 @@
 
 
 
+
+
 // *** *** *** CodeWARS KATA *** *** *** 
 
 // function getPlanetName(id){
@@ -128,14 +130,11 @@
 //   console.log(getPlanetName(3));
 
 
-
-
 // let getEvenOrOdd = (number) => {
 //      let result = number % 2 == 0 ? "Even" : "Odd" ;
 //       return result;
 //     }
 // console.log(getEvenOrOdd(4));
-
 
 
 // let getDivisorsCnt = (n) =>  {
@@ -149,10 +148,7 @@
 //   }
 
 
-
-
 // getDivisorCnt(4892);
-
 
 
 // let getDivisorCnt = (n) => {
@@ -210,39 +206,27 @@
 //   }
 
 
-
-
-
-
+// https://www.codewars.com/kata/513e08acc600c94f01000001/train/javascript/
 //RGB TO HEX CONVERSION IN JAVASCRIPT.
 // create an array of objects that stores the values as [r, g, b] - DONE
-// restrict range of its values - DONE BUT ERROR
-// handle capitalizations - NOT DONE
-// convert to hexadecimal string - NOT DONE.
+// restrict range of its values - DONE
+// handle capitalizations - DONE
+// convert to hexadecimal string - DONE
 
 
 let rgb = (r, g, b) => {
-    let colors = [];
-    colors.push(r);
-    colors.push(g);
-    colors.push(b);
-    
-    const correctedColors = colors.map(restrictRange);
-    console.log(correctedColors);
-    
+    r = Math.max(0, Math.min(255, r));
+    g = Math.max(0, Math.min(255, g));
+    b = Math.max(0, Math.min(255, b));
 
+    const redHex = r.toString(16).padStart(2, '0').toUpperCase();
+    const greenHex = g.toString(16).padStart(2, '0').toUpperCase();
+    const blueHex = b.toString(16).padStart(2, '0').toUpperCase();
+
+    const hexColor = `#${redHex}${greenHex}${blueHex}`;
+    return hexColor;
 };
-//
-let restrictRange = (colors) => {
-    for (let i of colors) {
-        if (i > 255) {
-            i = 255
-        } else if (i < 0) {
-            i = 0;
-        }
-    }
-    
-}
+
 rgb(300,255,255);
 
 
